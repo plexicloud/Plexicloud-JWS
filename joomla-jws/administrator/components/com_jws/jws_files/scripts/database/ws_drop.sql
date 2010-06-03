@@ -1,0 +1,1 @@
+drop table `#__users_apikey`

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params group="general" display="Configuration" image="general.gif" addpath="/administrator/components/com_community/elements">
+		<!--
+		A simple hack to have subgroups is to set the type as subgroup and the default as subgroup 
+		//-->
+
+		<param name="Site Configuration" label="Site Configuration" type="subgroup" default="subgroup" />
+			<param name="sitename" type="text" default="Jom Social" label="Site Name" description="Set your Community's site name" />
+			<!-- API display in profile preferences of jom social -->
+			<param name="apisupport" type="radio" default="1" label="Support API." description="Show the API support in User preferences on front end.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+	</params>	
+	<params group="features" display="Features" image="general.gif" addpath="/administrator/components/com_community/elements">
+		<param name="Groups" label="Groups" type="subgroup" default="subgroup" />
+			<param name="enablegroups" type="radio" default="1" label="Enable Groups System" description="Turn Groups System On or Off">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="moderategroupcreation" type="radio" default="1" label="Moderate Groups Creation" description="Moderate groups creation which causes groups created to automatically be unpublished.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="creategroups" type="radio" default="1" label="Allow Create New Group" description="Allow site users to create a new group">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="creatediscussion" type="radio" default="1" label="Allow Discussion Tool" description="Allow group administrators to create discussions">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+
+		<param name="Karma" label="Karma" type="subgroup" default="subgroup" />
+			<param name="point0" type="karma" default="20" label="Karma Points &lt;" description="" />
+			<param name="point1" type="karma" default="20" label="Karma Points > " description="" />
+			<param name="point2" type="karma" default="50" label="Karma Points > " description="Point 2" />
+			<param name="point3" type="karma" default="100" label="Karma Points > " description="Point 3" />
+			<param name="point4" type="karma" default="150" label="Karma Points > " description="Point 4" />
+			<param name="point5" type="karma" default="200" label="Karma Points > " description="Point 5" />
+
+		<param name="Walls" label="Walls" type="subgroup" default="subgroup" />
+			<param name="lockprofilewalls" type="radio" default="1" label="Lock walls in profile to friends only." description="Lock walls in the profile for users friends only.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="lockgroupwalls" type="radio" default="1" label="Lock walls in groups to group members only." description="Lock walls in groups to group members only.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			
+		<param name="Media" label="Media" type="subgroup" default="subgroup" />
+			<param name="photospath" size="50" type="text" default="" label="Photos Path" description="Enter the path where Jom Social should save all photos into." />
+			<param name="enablephotos" type="radio" default="1" label="Enable Photos" description="Turn Photos System On or Off">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="enablefiles" type="radio" default="1" label="Enable Files And Documents" description="Turn Files System On or Off">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="photomaxwidth" type="text" default="600" label="Maximum width for photos" description="Specify the maximum width of an uploaded photo. If image exceeds limit then it should automatically be resized with the option below" />
+			<param name="photooptimumwidth" type="text" default="400" label="Resize width for photos" description="Specify the width for the photos that needs to be resized" />
+		<param name="Private Message" label="Inbox" type="subgroup" default="subgroup" />
+			<param name="enablepm" type="radio" default="1" label="Enable Private Messaging System" description="Turn Private Messaging System On or Off">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+		<param name="Notifications" label="Inbox" type="subgroup" default="subgroup" />
+			<param name="notifyby" type="list" default="1" label="Send Notifications Through" description="Select the type of notification to be sent to the user">
+				<option value="1">E-mail</option>
+				<option value="2">Private Message</option>
+			</param>
+	</params>
+	
+	
+	<params group="privacy" display="Privacy" image="privacy.gif">
+		<param name="Default User Privacy" label="Default User Privacy" type="subgroup" default="subgroup" />
+			<param name="privacyprofile" type="radio" default="1" label="Default Profile Privacy" description="Select the default privacy for users profile.">
+				<option value="1">Public</option>
+				<option value="2">Members</option>
+				<option value="3">Friends</option>
+			</param>
+			<param name="privacyfriends" type="radio" default="1" label="Default Friends Privacy" description="Select the default privacy for users friends.">
+				<option value="1">Public</option>
+				<option value="2">Members</option>
+				<option value="3">Friends</option>
+				<option value="4">Self</option>
+			</param>
+			<param name="privacyphotos" type="radio" default="1" label="Default Photos Privacy" description="Select the default privacy for users photos.">
+				<option value="1">Public</option>
+				<option value="2">Members</option>
+				<option value="3">Friends</option>
+				<option value="4">Self</option>
+			</param>
+
+		<param name="Default User Emails And Notifications" label="Default User Emails And Notifications" type="subgroup" default="subgroup" />
+			<param name="privacyemail" type="radio" default="1" label="Receive System E-Mails" description="Allows user to receive system e-mail notifications">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="privacyemailpm" type="radio" default="1" label="Receive E-Mails for Private Messages" description="Allows user to receive system e-mail notifications when user receives a private message">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+			<param name="privacyapps" type="radio" default="1" label="Allow Applications" description="Allows user to add Applications">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+	</params>
+	
+	<params group="layout" display="Layout" image="applications.gif" addpath="/administrator/components/com_community/elements">
+		<param name="sef" type="radio" default="profile" label="Select url format" description="If SEF is enabled, you can select url format you want to use">
+			<option value="profile">/username/features</option>
+			<option value="feature">/features/username</option>
+		</param>
+		
+		<param name="Display settings" label="Display settings" type="subgroup" default="subgroup" />
+		<param name="displayname" type="radio" default="name" label="Which name do you want to use" description="Select to use either username of full name">
+			<option value="username">Username</option>
+			<option value="name">Full name</option>
+		</param>
+		
+		
+		<param name="Site Layout" label="Site Layout" type="subgroup" default="subgroup" />
+		<param name="template" type="template" label="Select template" default="default" description="Select a template that you want to use for Jom Social" />
+	</params>
+</config>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>JWS</name>
+    <author>Sudhi</author>
+    <creationDate>27/05/2010</creationDate>
+    <license>GNU/GPL</license>
+    <version>1.0</version>
+    <description>Joomla Webservices</description>
+
+    <!-- installation part -->
+    <install>
+        <queries>
+           
+        </queries>
+    </install>
+
+    <installfile>install.jws.php</installfile>
+    <uninstallfile>uninstall.jws.php</uninstallfile>
+
+   
+
+    <!-- administration part -->
+    <administration>
+
+    <menu task="default" img="js/ThemeOffice/component.png">JWS</menu>
+    <submenu>
+        <menu link="option=com_jws">JWS</menu>
+    </submenu>
+
+    <files>
+        <filename>jws.xml</filename>
+    </files>
+    <files folder="administrator/components/com_jws">
+        <filename>config.xml</filename>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>install.jws.php</filename>
+        <filename>jws.php</filename>
+        <filename>uninstall.jws.php</filename>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>views</folder>
+		<folder>jws_files</folder>
+    </files>
+
+    <languages folder="administrator/language/en-GB">
+        <language tag="en-GB">en-GB.com_jws.menu.ini</language>
+        <language tag="en-GB">en-GB.com_jws.ini</language>
+    </languages>
+
+    </administration>
+
+    <params>
+
+    </params>
+
+</install>

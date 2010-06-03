@@ -1,0 +1,69 @@
+Plexicloud Joomla Webservices v0.5.0
+============================================
+
+-----------------------
+INFO
+-----------------------
+This component provides web services functionality for Joomla core and components, which can be leveraged 
+for integration with thirdparty apps, software, and mobile devices.
+
+Ongoing development provided by Plexicloud, as the component is a major feature
+in their PlexiSuite edition for the cloud.
+
+Join development efforts on Github
+  >> http://github.com/plexicloud/Plexicloud-JWS
+
+
+-----------------------
+ROADMAP
+-----------------------
+1. Support better install method for Joomla 1.5
+2. Included in core.
+3. Documentation of API
+4. Repository of webservices for components
+
+
+(see CHANGELOG file)
+
+-----------------------
+CREDITS
+-----------------------
+Original GPL code developed by:
+  >> Hooduku - http://www.hooduku.com
+
+System and bug fixes:
+  >> Plexicloud / Hooduku, Inc
+
+
+-----------------------
+BUG REPORTING
+-----------------------
+http://github.com/plexicloud/Plexicloud-JWS/issues
+
+(see CHANGELOG file)
+
+-----------------------
+LICENSE
+-----------------------
+(see LICENSE file)
+
+
+-----------------------
+DEVELOPMENT SPONSORS
+-----------------------
+
+We wanted to thank the following development sponsors and partners
+that make this component ongoing development possible.
+
+Plexicloud - www.plexicloud.com
+  >> Platinum sponsors
+
+Hooduku - www.museamp.com
+  >> Gold Sponsors
+  
+Lunafield Media Global - www.lunafield.com
+  >> Silver sponsors
+
+
+*** Donate to the project at www.plexicloud.com/donate ***
+
