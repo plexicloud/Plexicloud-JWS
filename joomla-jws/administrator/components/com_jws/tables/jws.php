@@ -1,18 +1,15 @@
 <?php
 /**
- * Joomla! 1.5 component jws
- *
- * @version $Id: jws.php 2010-05-27 10:39:17 svn $
- * @author Sudhi
- * @package Joomla
- * @subpackage jws
- * @license GNU/GPL
- *
- * Joomla Webservices
- *
- * This component file was created using the Joomla Component Creator by Not Web Design
- * http://www.notwebdesign.com/joomla_component_creator/
- *
+ * @version		$Id: jws.php  Sudhi Seshachala $
+ * @package		JWS
+ * @subpackage	Admin
+ * @copyright	Copyright (C) 2005 - 2010 Hooduku/Plexicloud. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
  */
 
 // no direct access

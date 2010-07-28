@@ -136,8 +136,11 @@ class UsersViewUser extends JView
 			$db = & JFactory::getDBO();
 			$db->setQuery($sql);
 			$obj = $db->loadObject();
+			if(isset($obj->apikey))
 			$user->_apikey = $obj->apikey;
+			if(isset($obj->secretkey))
 			$user->_secretkey = $obj->secretkey;
+			if(isset($obj->blocked))
 			$user->_blocked = $obj->blocked;
 		}
 		
